@@ -10,10 +10,10 @@ function Welcome() {
         className="absolute inset-0 h-full w-full object-cover"
       />
 
-      <div className="relative z-10 h-full">
-        <img src={logo} alt="MochiPlush" className="ml-8 mt-8 w-32" />
+      <div className="relative z-10 flex h-full flex-col pt-6">
+        <img src={logo} alt="MochiPlush" className="ml-8 w-32" />
 
-        <h1 className="font-lemon mt-10 text-center text-[38px] leading-tight text-white">
+        <h1 className="font-lemon mt-1 text-center text-[30px] leading-tight text-white">
           ENCONTRE SUA
           <br />
           NOVA PELÚCIA
@@ -21,8 +21,8 @@ function Welcome() {
           FAVORITA!
         </h1>
 
-        <div className="mt-8 flex justify-center">
-          <button className="rounded-xl bg-[#F07AB7] px-8 py-3 text-lg font-semibold text-white shadow-lg transition hover:opacity-90">
+        <div className="mt-4 flex justify-center">
+          <button className="rounded-xl bg-[#F07AB7] px-5 py-2 text-base font-semibold text-white shadow-lg transition hover:opacity-90">
             Clique aqui
           </button>
         </div>
