@@ -48,8 +48,8 @@ function Login() {
         <div className="mt-8 text-center">
           <p className="font-lexend text-[17px] text-[#2B2B2B]">
             Ainda não possui uma conta?{" "}
-            <span className="cursor-pointer font-semibold hover:underline text-[#1E1E1E]">
-              Criar conta
+            <span className="cursor-pointer font-semibold text-[#1E1E1E] hover:text-[#DD62A1]">
+                Criar conta
             </span>
           </p>
         </div>
