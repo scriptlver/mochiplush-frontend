@@ -1,6 +1,8 @@
 import logo from "../../img/MochiPlush/mp-logo.png";
 import googleIcon from "../../img/Login/google-login.png";
 
+import { Link } from "react-router-dom";
+
 function Login() {
   return (
     <div className="min-h-screen bg-[#F584BE]">
@@ -48,9 +50,12 @@ function Login() {
         <div className="mt-8 text-center">
           <p className="font-lexend text-[17px] text-[#2B2B2B]">
             Ainda não possui uma conta?{" "}
-            <span className="cursor-pointer font-semibold text-[#1E1E1E] hover:text-[#DD62A1]">
-                Criar conta
-            </span>
+            <Link
+              to="/register"
+              className="cursor-pointer font-semibold text-[#1E1E1E] hover:text-[#DD62A1]"
+            >
+              Criar conta
+            </Link>
           </p>
         </div>
 

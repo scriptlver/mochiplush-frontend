@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Welcome from "./assets/pages/Welcome/Welcome";
 import Login from "./assets/pages/Login/Login";
 import Register from "./assets/pages/Register/Register";
+import TermsOfUse from "./assets/pages/TermsOfUse/TermsOfUse";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Route path="/" element={<Welcome />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/terms-of-use" element={<TermsOfUse />} />
       </Routes>
     </BrowserRouter>
   );
