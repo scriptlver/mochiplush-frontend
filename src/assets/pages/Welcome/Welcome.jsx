@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import background from "../../img/MochiPlush/background-tasy.png";
 import logo from "../../img/MochiPlush/mp-logo.png";
 
@@ -22,9 +24,12 @@ function Welcome() {
         </h1>
 
         <div className="mt-4 flex justify-center">
-          <button className="rounded-xl bg-[#F07AB7] px-5 py-2 text-base font-semibold text-white shadow-lg transition hover:opacity-90">
+          <Link
+            to="/login"
+            className="rounded-xl bg-[#F07AB7] px-5 py-2 text-base font-semibold text-white shadow-lg transition hover:opacity-90"
+          >
             Clique aqui
-          </button>
+          </Link>
         </div>
       </div>
     </div>
