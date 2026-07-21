@@ -74,7 +74,7 @@ function Register() {
             </Link>{" "}
             e a{" "}
             <Link
-              to="/politica-de-privacidade"
+              to="/privacy-policy"
               className="font-semibold hover:underline"
             >
               Política de Privacidade

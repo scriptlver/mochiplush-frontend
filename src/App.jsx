@@ -4,6 +4,7 @@ import Welcome from "./assets/pages/Welcome/Welcome";
 import Login from "./assets/pages/Login/Login";
 import Register from "./assets/pages/Register/Register";
 import TermsOfUse from "./assets/pages/TermsOfUse/TermsOfUse";
+import PrivacyPolicy from "./assets/pages/PrivacyPolicy/PrivacyPolicy";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/terms-of-use" element={<TermsOfUse />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
     </BrowserRouter>
   );
