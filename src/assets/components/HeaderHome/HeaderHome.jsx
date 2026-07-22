@@ -4,16 +4,16 @@ import CategoryList from "../CategoryList/CategoryList";
 
 function HeaderHome() {
   return (
-    <header className="relative bg-[#F584BE] px-6 pt-66 pb-8">
+    <header className="relative bg-[#F584BE] px-6 pt-66 pb-16">
       <div className="flex justify-center">
         <img
           src={logo}
           alt="MochiPlush"
-          className="absolute top-4 h-32 w-auto object-contain"
+          className="absolute top-4 h-30 w-auto object-contain"
         />
       </div>
 
-      <div className="-mt-38">
+      <div className="-mt-40">
         <SearchBar />
       </div>
       <div className="mt-8">

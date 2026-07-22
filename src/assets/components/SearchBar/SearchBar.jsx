@@ -3,7 +3,7 @@ import { Search, ShoppingCart } from "lucide-react";
 function SearchBar() {
   return (
     <div className="mt-6 flex items-center gap-3">
-      <div className="flex h-12 flex-1 items-center rounded-xl bg-white px-4 shadow-sm">
+      <div className="flex h-12 flex-1 items-center rounded-xl bg-white px-4 border border-gray-400">
         <input
           type="text"
           placeholder=""
