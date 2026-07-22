@@ -6,6 +6,8 @@ import Register from "./assets/pages/Register/Register";
 import TermsOfUse from "./assets/pages/TermsOfUse/TermsOfUse";
 import PrivacyPolicy from "./assets/pages/PrivacyPolicy/PrivacyPolicy";
 
+import Home from "./assets/pages/Home/Home";
+
 function App() {
   return (
     <BrowserRouter>
@@ -15,6 +17,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/terms-of-use" element={<TermsOfUse />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/home" element={<Home />} />
       </Routes>
     </BrowserRouter>
   );
