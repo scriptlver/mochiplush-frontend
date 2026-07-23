@@ -5,7 +5,15 @@ import tito from "../../img/Home/tito.png";
 import sansao from "../../img/Home/sansao.png";
 import garfield from "../../img/Home/garfield.png";
 
-const products = [
+import koya from "../../img/Home/koya.png";
+import rj from "../../img/Home/rj.png";
+import shooky from "../../img/Home/shooky.png";
+import mang from "../../img/Home/mang.png";
+import chimmy from "../../img/Home/chimmy.png";
+import tata from "../../img/Home/tata.png";
+import cooky from "../../img/Home/cooky.png";
+
+const featuredProducts = [
   {
     id: 1,
     image: bob,
@@ -32,6 +40,51 @@ const products = [
   },
 ];
 
+const bt21Products = [
+  {
+    id: 5,
+    image: koya,
+    price: "R$ 59,99",
+    name: "Pelúcia Bt21 BTS Koya 25cm",
+  },
+  {
+    id: 6,
+    image: rj,
+    price: "R$ 59,99",
+    name: "Pelúcia Bt21 BTS RJ 25cm",
+  },
+  {
+    id: 7,
+    image: shooky,
+    price: "R$ 59,99",
+    name: "Pelúcia Bt21 BTS SHOOKY 25cm",
+  },
+  {
+    id: 8,
+    image: mang,
+    price: "R$ 59,99",
+    name: "Pelúcia Bt21 BTS MANG 25cm",
+  },
+  {
+    id: 9,
+    image: chimmy,
+    price: "R$ 59,99",
+    name: "Pelúcia Bt21 BTS CHIMMY 25cm",
+  },
+  {
+    id: 9,
+    image: tata,
+    price: "R$ 59,99",
+    name: "Pelúcia Bt21 BTS TATA 25cm",
+  },
+  {
+    id: 9,
+    image: cooky,
+    price: "R$ 59,99",
+    name: "Pelúcia Bt21 BTS COOKY 25cm",
+  },
+];
+
 function ProductsSection() {
   return (
     <>
@@ -41,7 +94,7 @@ function ProductsSection() {
         </h2>
 
         <div className="grid w-full grid-cols-2 gap-x-2 gap-y-4">
-          {products.map((product) => (
+          {featuredProducts.map((product) => (
             <ProductCard key={product.id} {...product} />
           ))}
         </div>
@@ -53,7 +106,7 @@ function ProductsSection() {
         </h2>
 
         <div className="grid w-full grid-cols-2 gap-x-2 gap-y-4">
-          {products.map((product) => (
+          {bt21Products.map((product) => (
             <ProductCard key={product.id} {...product} />
           ))}
         </div>
