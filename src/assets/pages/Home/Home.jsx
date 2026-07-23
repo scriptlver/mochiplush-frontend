@@ -1,4 +1,5 @@
 import HeaderHome from "../../components/HeaderHome/HeaderHome";
+import ProductsSection from "../../components/ProductsSection/ProductsSection";
 import bannerHeader from "../../img/Home/header.png";
 
 function Home() {
@@ -8,12 +9,10 @@ function Home() {
 
       <div className="relative -mt-12 rounded-t-[32px] bg-[#F8F8F8] px-4 pt-6 pb-20">
         <div className="mb-8 overflow-hidden">
-          <img
-            src={bannerHeader}
-            alt="Banner Promocional"
-            className="h-auto w-full object-cover"
-          />
+          <img src={bannerHeader} alt="Banner" className="w-full" />
         </div>
+
+        <ProductsSection />
       </div>
     </div>
   );
