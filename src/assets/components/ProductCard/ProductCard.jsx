@@ -1,6 +1,6 @@
 import { Heart } from "lucide-react";
 
-function ProductCard({ image, price, name }) {
+function ProductCard({ image, price, name, favorite = false }) {
   return (
     <div className="w-full flex flex-col">
       <div className="aspect-square w-full rounded-2xl flex items-center justify-center p-2">
@@ -17,7 +17,8 @@ function ProductCard({ image, price, name }) {
             <Heart
               size={16}
               strokeWidth={1.8}
-              className="text-black transition hover:text-[#D45998]"
+              fill={favorite ? "#FF0000" : "none"}
+              className={favorite ? "text-red-500" : "text-black"}
             />
           </button>
         </div>

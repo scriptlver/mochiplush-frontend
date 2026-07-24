@@ -15,7 +15,7 @@ function Home() {
             className="w-full object-cover"
           />
 
-          <button className="absolute bottom-3 left-22 bg-[#F07AB7] hover:bg-[#e065a4] text-white font-inter font-medium text-[8px] px-2.5 py-1 rounded-md shadow-sm transition-all active:scale-95">
+          <button className="absolute bottom-3 left-25 bg-[#F07AB7] hover:bg-[#e065a4] text-white font-inter font-medium text-[8px] px-2.5 py-1 rounded-md shadow-sm transition-all active:scale-95">
             Saiba mais
           </button>
         </div>

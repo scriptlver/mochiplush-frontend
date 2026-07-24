@@ -7,6 +7,7 @@ import TermsOfUse from "./assets/pages/TermsOfUse/TermsOfUse";
 import PrivacyPolicy from "./assets/pages/PrivacyPolicy/PrivacyPolicy";
 
 import Home from "./assets/pages/Home/Home";
+import Favorites from "./assets/pages/Favorites/Favorites";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/terms-of-use" element={<TermsOfUse />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/favorites" element={<Favorites />} />
       </Routes>
     </BrowserRouter>
   );
