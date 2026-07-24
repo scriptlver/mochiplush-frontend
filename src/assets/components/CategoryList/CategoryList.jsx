@@ -8,15 +8,15 @@ function CategoryList() {
 
   return (
     <div className="flex justify-between px-2">
-      <CategoryButton icon={Flame} title="Mais vendidos" />
+      <CategoryButton icon={Flame} title="Novidades" />
 
       <div onClick={() => navigate("/favorites")} className="cursor-pointer">
         <CategoryButton icon={Heart} title="Favoritos" />
       </div>
 
-      <CategoryButton icon={Gift} title="Kits" />
+      <CategoryButton icon={Gift} title="Mais vendidos" />
 
-      <CategoryButton icon={Sparkles} title="Novidades" />
+      <CategoryButton icon={Sparkles} title="Coleção BT21" />
     </div>
   );
 }

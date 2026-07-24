@@ -1,3 +1,5 @@
+import { Fragment } from "react";
+
 import ProductCard from "../ProductCard/ProductCard";
 
 import bob from "../../img/Home/bob.png";
@@ -17,6 +19,8 @@ import mang from "../../img/Home/mang.png";
 import chimmy from "../../img/Home/chimmy.png";
 import tata from "../../img/Home/tata.png";
 import cooky from "../../img/Home/cooky.png";
+
+import headerBT21 from "../../img/Home/headerBT21.png";
 
 export const featuredProducts = [
   {
@@ -49,14 +53,12 @@ export const featuredProducts = [
     image: pikachu,
     price: "R$ 109,99",
     name: "Pokémon Pelúcia do Pikachu com Som",
-    favorite: false,
   },
   {
     id: 6,
     image: stitch,
     price: "R$ 119,99",
     name: "Pelúcia 17cm Stitch Com Cheiro E Som",
-    favorite: false,
   },
   {
     id: 7,
@@ -99,24 +101,6 @@ export const bt21Products = [
     price: "R$ 59,99",
     name: "Pelúcia Bt21 BTS MANG 25cm",
   },
-  {
-    id: 13,
-    image: chimmy,
-    price: "R$ 59,99",
-    name: "Pelúcia Bt21 BTS CHIMMY 25cm",
-  },
-  {
-    id: 14,
-    image: tata,
-    price: "R$ 59,99",
-    name: "Pelúcia Bt21 BTS TATA 25cm",
-  },
-  {
-    id: 15,
-    image: cooky,
-    price: "R$ 59,99",
-    name: "Pelúcia Bt21 BTS COOKY 25cm",
-  },
 ];
 
 function ProductsSection() {
@@ -132,9 +116,42 @@ function ProductsSection() {
             <ProductCard key={product.id} {...product} />
           ))}
         </div>
+
+        <p className="mt-5 mr-2 cursor-pointer text-right font-inter text-[18px] font-medium text-black transition-colors hover:text-[#F584BE]">
+          Ver mais
+        </p>
       </section>
 
-      <section className="mt-12 w-full px-4">
+      <div className="mt-10 px-4">
+        <div className="relative overflow-hidden rounded-2xl">
+          <img
+            src={headerBT21}
+            alt="Banner BT21"
+            className="w-full object-cover"
+          />
+
+          <button
+            className="
+              absolute bottom-3 left-20
+              rounded-md
+              bg-[#477CB3]
+              px-2.5 py-1
+              font-inter
+              text-[8px]
+              font-medium
+              text-white
+              shadow-sm
+              transition-all
+              hover:bg-[#3096DF]
+              active:scale-95
+            "
+          >
+            Saiba mais
+          </button>
+        </div>
+      </div>
+
+      <section className="mt-8 w-full px-4">
         <h2 className="mb-4 pl-2 font-lexend text-[20px] font-bold text-black">
           Coleção BT21
         </h2>
@@ -144,6 +161,10 @@ function ProductsSection() {
             <ProductCard key={product.id} {...product} />
           ))}
         </div>
+
+        <p className="mt-5 cursor-pointer text-right font-inter text-[18px] font-medium text-black hover:text-[#F584BE]">
+          Ver mais
+        </p>
       </section>
     </>
   );
