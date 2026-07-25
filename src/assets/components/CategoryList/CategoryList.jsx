@@ -18,7 +18,9 @@ function CategoryList() {
 
       <CategoryButton icon={Gift} title="Mais vendidos" />
 
-      <CategoryButton icon={Sparkles} title="Coleção BT21" />
+      <div onClick={() => navigate("/bt21")} className="cursor-pointer">
+        <CategoryButton icon={Sparkles} title="Coleção BT21" />
+      </div>
     </div>
   );
 }

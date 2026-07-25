@@ -1,10 +1,17 @@
 import { Heart } from "lucide-react";
 
-function ProductCard({ image, price, name, favorite = false }) {
+function ProductCard({ image, price, name, favorite = false, onClick }) {
   return (
-    <div className="w-full flex flex-col">
+    <div
+      onClick={onClick}
+      className="w-full flex flex-col cursor-pointer"
+    >
       <div className="aspect-square w-full rounded-2xl flex items-center justify-center p-2">
-        <img src={image} alt={name} className="h-full w-full object-contain" />
+        <img
+          src={image}
+          alt={name}
+          className="h-full w-full object-contain"
+        />
       </div>
 
       <div className="mt-2 w-full px-3">
@@ -13,7 +20,10 @@ function ProductCard({ image, price, name, favorite = false }) {
             {price}
           </h3>
 
-          <button className="shrink-0 p-1">
+          <button
+            onClick={(e) => e.stopPropagation()}
+            className="shrink-0 p-1"
+          >
             <Heart
               size={16}
               strokeWidth={1.8}

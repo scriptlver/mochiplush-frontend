@@ -9,6 +9,8 @@ import PrivacyPolicy from "./assets/pages/PrivacyPolicy/PrivacyPolicy";
 import Home from "./assets/pages/Home/Home";
 import Favorites from "./assets/pages/Favorites/Favorites";
 import News from "./assets/pages/News/News";
+import CollectionBT21 from "./assets/pages/CollectionBT21/CollectionBT21";
+import ProductPage from "./assets/pages/ProductPage/ProductPage";
 
 
 function App() {
@@ -23,6 +25,8 @@ function App() {
         <Route path="/home" element={<Home /> } />
         <Route path="/favorites" element={<Favorites />} />
         <Route path="/news" element={<News />} />
+        <Route path="/bt21" element={<CollectionBT21 />} />
+        <Route path="/product" element={<ProductPage />} />
       </Routes>
     </BrowserRouter>
   );

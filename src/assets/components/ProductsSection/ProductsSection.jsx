@@ -16,6 +16,9 @@ import koya from "../../img/Home/koya.png";
 import rj from "../../img/Home/rj.png";
 import shooky from "../../img/Home/shooky.png";
 import mang from "../../img/Home/mang.png";
+import chimmy from "../../img/Home/chimmy.png";
+import tata from "../../img/Home/tata.png";
+import cooky from "../../img/Home/cooky.png";
 
 import headerBT21 from "../../img/Home/headerBT21.png";
 
@@ -77,7 +80,7 @@ export const bt21Products = [
     id: 9,
     image: koya,
     price: "R$ 59,99",
-    name: "Pelúcia Bt21 BTS Koya 25cm",
+    name: "Pelúcia Bt21 BTS KOYA 25cm",
   },
   {
     id: 10,
@@ -97,6 +100,25 @@ export const bt21Products = [
     image: mang,
     price: "R$ 59,99",
     name: "Pelúcia Bt21 BTS MANG 25cm",
+  },
+  {
+    id: 13,
+    image: chimmy,
+    price: "R$ 59,99",
+    name: "Pelúcia Bt21 BTS CHIMMY 25cm",
+  },
+  {
+    id: 14,
+    image: tata,
+    price: "R$ 59,99",
+    name: "Pelúcia Bt21 BTS TATA 25cm",
+    link: "/product",
+  },
+  {
+    id: 15,
+    image: cooky,
+    price: "R$ 59,99",
+    name: "Pelúcia Bt21 BTS COOKY 25cm",
   },
 ];
 
@@ -133,20 +155,8 @@ function ProductsSection() {
           />
 
           <button
-            className="
-              absolute bottom-3 left-20
-              rounded-md
-              bg-[#477CB3]
-              px-2.5 py-1
-              font-inter
-              text-[8px]
-              font-medium
-              text-white
-              shadow-sm
-              transition-all
-              hover:bg-[#3096DF]
-              active:scale-95
-            "
+            onClick={() => navigate("/bt21")}
+            className="absolute bottom-3 left-21 rounded-md bg-[#477CB3] px-2.5 py-1 font-inter text-[8px] font-medium text-white shadow-sm transition-all hover:bg-[#3096DF] active:scale-95"
           >
             Saiba mais
           </button>
@@ -159,13 +169,21 @@ function ProductsSection() {
         </h2>
 
         <div className="grid w-full grid-cols-2 gap-x-2 gap-y-4">
-          {bt21Products.map((product) => (
-            <ProductCard key={product.id} {...product} />
+          {bt21Products.slice(0, 4).map((product) => (
+            <ProductCard
+              key={product.id}
+              {...product}
+              onClick={() => {
+                if (product.id === 14) {
+                  navigate("/product");
+                }
+              }}
+            />
           ))}
         </div>
 
         <p
-          onClick={() => navigate("/novidades")}
+          onClick={() => navigate("/bt21")}
           className="mt-5 mr-2 cursor-pointer text-right font-inter text-[18px] font-medium text-black transition-colors hover:text-[#F584BE]"
         >
           Ver mais
