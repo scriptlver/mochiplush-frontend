@@ -8,7 +8,9 @@ function CategoryList() {
 
   return (
     <div className="flex justify-between px-2">
-      <CategoryButton icon={Flame} title="Novidades" />
+      <div onClick={() => navigate("/news")} className="cursor-pointer">
+        <CategoryButton icon={Flame} title="Novidades" />
+      </div>
 
       <div onClick={() => navigate("/favorites")} className="cursor-pointer">
         <CategoryButton icon={Heart} title="Favoritos" />
