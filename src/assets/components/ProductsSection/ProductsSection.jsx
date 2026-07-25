@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+import { useNavigate } from "react-router-dom";
 
 import ProductCard from "../ProductCard/ProductCard";
 
@@ -16,9 +16,6 @@ import koya from "../../img/Home/koya.png";
 import rj from "../../img/Home/rj.png";
 import shooky from "../../img/Home/shooky.png";
 import mang from "../../img/Home/mang.png";
-import chimmy from "../../img/Home/chimmy.png";
-import tata from "../../img/Home/tata.png";
-import cooky from "../../img/Home/cooky.png";
 
 import headerBT21 from "../../img/Home/headerBT21.png";
 
@@ -104,6 +101,8 @@ export const bt21Products = [
 ];
 
 function ProductsSection() {
+  const navigate = useNavigate();
+
   return (
     <>
       <section className="mt-12 w-full px-4">
@@ -117,7 +116,10 @@ function ProductsSection() {
           ))}
         </div>
 
-        <p className="mt-5 mr-2 cursor-pointer text-right font-inter text-[18px] font-medium text-black transition-colors hover:text-[#F584BE]">
+        <p
+          onClick={() => navigate("/news")}
+          className="mt-5 mr-2 cursor-pointer text-right font-inter text-[18px] font-medium text-black transition-colors hover:text-[#F584BE]"
+        >
           Ver mais
         </p>
       </section>
@@ -162,7 +164,10 @@ function ProductsSection() {
           ))}
         </div>
 
-        <p className="mt-5 cursor-pointer text-right font-inter text-[18px] font-medium text-black hover:text-[#F584BE]">
+        <p
+          onClick={() => navigate("/novidades")}
+          className="mt-5 mr-2 cursor-pointer text-right font-inter text-[18px] font-medium text-black transition-colors hover:text-[#F584BE]"
+        >
           Ver mais
         </p>
       </section>
