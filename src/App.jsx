@@ -12,6 +12,7 @@ import News from "./assets/pages/News/News";
 import CollectionBT21 from "./assets/pages/CollectionBT21/CollectionBT21";
 import ProductPage from "./assets/pages/ProductPage/ProductPage";
 
+import Cart from "./assets/pages/Cart/Cart";
 
 function App() {
   return (
@@ -22,11 +23,12 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/terms-of-use" element={<TermsOfUse />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-        <Route path="/home" element={<Home /> } />
+        <Route path="/home" element={<Home />} />
         <Route path="/favorites" element={<Favorites />} />
         <Route path="/news" element={<News />} />
         <Route path="/bt21" element={<CollectionBT21 />} />
         <Route path="/product" element={<ProductPage />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
     </BrowserRouter>
   );
