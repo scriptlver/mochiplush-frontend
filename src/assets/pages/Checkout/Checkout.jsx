@@ -14,7 +14,10 @@ function Checkout() {
 
       <AddressCard />
 
-      <div className="mt-6">
+      <div
+        className="mt-6 cursor-pointer"
+        onClick={() => navigate("/checkout-card")}
+      >
         <PaymentMethod />
       </div>
 
