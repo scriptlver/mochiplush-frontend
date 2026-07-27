@@ -1,12 +1,10 @@
-import React from "react";
-
-function SuccessModal({ isOpen }) {
+function AccountCreatedModal({ isOpen }) {
   if (!isOpen) return null;
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center border-4 border-black px-6 backdrop-blur-[1px]">
       <div className="h-[230px] w-full max-w-[320px] rounded-[24px] bg-[#EFEFEF]/95 p-6 text-center border border-black/40">
-        <div className="mb-4 flex justify-center">
+        <div className="mb-4 flex justify-center pt-8">
           <svg
             className="h-16 w-16 text-[#72E85A]"
             fill="none"
@@ -23,16 +21,11 @@ function SuccessModal({ isOpen }) {
         </div>
 
         <h3 className="font-lexend text-[16px] font-bold text-black mb-2 leading-tight">
-          Compra realizada com sucesso!
+          Conta realizada com sucesso!
         </h3>
-
-        <p className="font-inter text-[12px] leading-tight text-[#666666]">
-          Obrigado por comprar conosco! Enviamos os detalhes do pedido e o
-          comprovante para o seu e-mail.
-        </p>
       </div>
     </div>
   );
 }
 
-export default SuccessModal;
+export default AccountCreatedModal;
