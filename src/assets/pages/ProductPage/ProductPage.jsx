@@ -1,8 +1,9 @@
 import ProductHeader from "../../components/ProductHeader/ProductHeader";
-
+import { useNavigate } from "react-router-dom";
 import tata from "../../img/Home/tata.png";
 
 function ProductPage() {
+  const navigate = useNavigate();
   return (
     <div className="min-h-screen bg-[#F8F8F8]">
       <div className="mx-auto max-w-md min-h-screen bg-white">
@@ -43,6 +44,7 @@ function ProductPage() {
 
           <div className="mt-8 flex items-center justify-between gap-4">
             <button
+              onClick={() => navigate("/cart")}
               className="
     font-inter
     text-[16px]
@@ -56,6 +58,7 @@ function ProductPage() {
               Adicionar ao carrinho
             </button>
             <button
+              onClick={() => navigate("/cart")}
               className="
     h-[48px]
     w-[150px]
@@ -119,6 +122,7 @@ function ProductPage() {
 
             <div className="mt-6 flex justify-between text-[13px]">
               <button
+                onClick={() => navigate("/terms-of-use")}
                 className="
     font-inter
     font-semibold

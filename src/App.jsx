@@ -13,6 +13,8 @@ import CollectionBT21 from "./assets/pages/CollectionBT21/CollectionBT21";
 import ProductPage from "./assets/pages/ProductPage/ProductPage";
 
 import Cart from "./assets/pages/Cart/Cart";
+import Checkout from "./assets/pages/Checkout/Checkout";
+import CheckoutCard from "./assets/pages/CheckoutCard/CheckoutCard";
 
 function App() {
   return (
@@ -29,6 +31,8 @@ function App() {
         <Route path="/bt21" element={<CollectionBT21 />} />
         <Route path="/product" element={<ProductPage />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/checkout" element={<Checkout />} />
+        <Route path="/checkout-card" element={<CheckoutCard />} />
       </Routes>
     </BrowserRouter>
   );

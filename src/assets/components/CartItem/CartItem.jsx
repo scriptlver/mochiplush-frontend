@@ -7,7 +7,7 @@ function CartItem({ imagem, titulo, preco, quantidade = 1 }) {
       <img
         src={imagem}
         alt={titulo}
-        className="h-24 w-24 rounded-xl object-cover"
+        className="h-24 w-24 rounded-sm object-cover"
       />
 
       <div className="ml-3 flex flex-1 flex-col justify-between self-stretch py-1">

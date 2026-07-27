@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Header from "../../components/Header/Header";
 import CartItem from "../../components/CartItem/CartItem";
 
-import perfil from "../../img/Header/sooin-icon.png";
+import profile from "../../img/Header/sooin-icon.png";
 import imagemHelloKitty from "../../img/Home/hello-kitty.png";
 import imagemTata from "../../img/Home/tata.png";
 import imagemLaviJuan from "../../img/Home/lavi&juan.png";
@@ -13,7 +13,7 @@ function Cart() {
 
   return (
     <div className="min-h-screen bg-white px-6 pt-6">
-      <Header title="Carrinho" image={perfil} />
+      <Header title="Carrinho" image={profile} />
 
       <div className="mt-6 flex flex-col gap-3">
         <CartItem
@@ -40,7 +40,7 @@ function Cart() {
         />
       </div>
 
-      <div className="mt-8 space-y-3 font-lexend text-base">
+      <div className="mt-8 space-y-3 font-lexend text-[15px]">
         <div className="flex justify-between text-black">
           <span className="font-bold">Subtotal</span>
           <span>R$ 189.97</span>
@@ -57,7 +57,10 @@ function Cart() {
         </div>
       </div>
 
-      <button className="mt-10 h-14 w-full rounded-xl bg-[#F584BE] font-lexend text-xl font-semibold text-white transition hover:bg-[#DD62A1]">
+      <button
+        onClick={() => navigate("/checkout")}
+        className="mt-10 h-14 w-full rounded-xl bg-[#F584BE] font-lexend text-xl font-semibold text-white transition hover:bg-[#DD62A1]"
+      >
         Confirmar pedido
       </button>
     </div>
