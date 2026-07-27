@@ -1,15 +1,27 @@
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import Header from "../../components/Header/Header";
 import AddressCard from "../../components/AddressCard/AddressCard";
 import PaymentMethod from "../../components/PaymentMethod/PaymentMethod";
+import SuccessModal from "../../components/Modal/SuccessModal/SuccessModal";
 
 import profile from "../../img/Header/sooin-icon.png";
 
 function Checkout() {
   const navigate = useNavigate();
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleFinalizeOrder = () => {
+    setIsModalOpen(true);
+
+    setTimeout(() => {
+      navigate("/home");
+    }, 3000);
+  };
+
   return (
-    <div className="min-h-screen bg-[#F8F8F8] px-6 pt-2 pb-8">
+    <div className="relative min-h-screen bg-[#F8F8F8] px-6 pt-2 pb-8">
       <Header title="Checkout" image={profile} />
 
       <AddressCard />
@@ -38,9 +50,14 @@ function Checkout() {
         </div>
       </div>
 
-      <button className="mt-10 h-14 w-full rounded-xl bg-[#F584BE] font-lexend text-xl font-semibold text-white transition hover:bg-[#DD62A1]">
+      <button
+        onClick={handleFinalizeOrder}
+        className="mt-10 h-14 w-full rounded-xl bg-[#F584BE] font-lexend text-xl font-semibold text-white transition hover:bg-[#DD62A1]"
+      >
         Finalizar pedido
       </button>
+
+      <SuccessModal isOpen={isModalOpen} />
     </div>
   );
 }
