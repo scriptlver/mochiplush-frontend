@@ -1,4 +1,4 @@
-function AccountCreatedModal({ isOpen }) {
+function LoginSuccess({ isOpen }) {
   if (!isOpen) return null;
 
   return (
@@ -21,11 +21,11 @@ function AccountCreatedModal({ isOpen }) {
         </div>
 
         <h3 className="font-lexend text-[16px] font-bold text-black mb-2 leading-tight">
-          Conta criada com sucesso!
+          Login realizado com sucesso!
         </h3>
       </div>
     </div>
   );
 }
 
-export default AccountCreatedModal;
+export default LoginSuccess;

@@ -15,6 +15,8 @@ import ProductPage from "./assets/pages/ProductPage/ProductPage";
 import Cart from "./assets/pages/Cart/Cart";
 import Checkout from "./assets/pages/Checkout/Checkout";
 import CheckoutCard from "./assets/pages/CheckoutCard/CheckoutCard";
+import Profile from "./assets/pages/Profile/Profile";
+
 
 function App() {
   return (
@@ -33,6 +35,7 @@ function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/checkout-card" element={<CheckoutCard />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
     </BrowserRouter>
   );
