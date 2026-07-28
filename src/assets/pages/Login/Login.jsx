@@ -59,7 +59,7 @@ function Login() {
           <button
             type="button"
             onClick={handleLogin}
-            className="mt-10 h-14 w-full rounded-xl border-2 bg-[#F584BE] font-lexend text-xl font-semibold text-white transition hover:bg-[#DD62A1]"
+            className="mt-10 h-14 w-full rounded-xl border-1 border-black bg-[#F584BE] font-lexend text-xl font-semibold text-white transition hover:bg-[#DD62A1]"
           >
             Entrar
           </button>

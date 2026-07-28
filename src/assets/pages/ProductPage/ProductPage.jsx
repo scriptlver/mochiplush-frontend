@@ -60,19 +60,21 @@ function ProductPage() {
             <button
               onClick={() => navigate("/cart")}
               className="
-    h-[48px]
-    w-[150px]
-    rounded-xl
-    bg-[#F07AB7]
-    font-inter
-    text-[18px]
-    font-medium
-    text-white
-    shadow-sm
-    transition-all
-    hover:bg-[#e065a4]
-    active:scale-95
-  "
+  h-[48px]
+  w-[150px]
+  rounded-xl
+  border
+  border-black
+  bg-[#F07AB7]
+  font-inter
+  text-[18px]
+  font-medium
+  text-white
+  shadow-sm
+  transition-all
+  hover:bg-[#e065a4]
+  active:scale-95
+"
             >
               Comprar
             </button>
@@ -106,15 +108,17 @@ function ProductPage() {
 
               <button
                 className="
-                  rounded-xl
-                  bg-[#F584BE]
-                  px-6
-                  font-inter
-                  font-semibold
-                  text-white
-                  transition
-                  hover:bg-[#eb6cac]
-                "
+  rounded-xl
+  border
+  border-black
+  bg-[#F584BE]
+  px-6
+  font-inter
+  font-semibold
+  text-white
+  transition
+  hover:bg-[#eb6cac]
+"
               >
                 Calcular
               </button>
