@@ -16,6 +16,8 @@ import Cart from "./assets/pages/Cart/Cart";
 import Checkout from "./assets/pages/Checkout/Checkout";
 import CheckoutCard from "./assets/pages/CheckoutCard/CheckoutCard";
 import Profile from "./assets/pages/Profile/Profile";
+import EditProfile from "./assets/pages/EditProfile/EditProfile";
+
 
 
 function App() {
@@ -36,6 +38,7 @@ function App() {
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/checkout-card" element={<CheckoutCard />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/edit-profile" element={<EditProfile />} />
       </Routes>
     </BrowserRouter>
   );

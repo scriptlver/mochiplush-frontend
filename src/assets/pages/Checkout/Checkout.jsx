@@ -22,7 +22,11 @@ function Checkout() {
 
   return (
     <div className="relative min-h-screen bg-[#F8F8F8] px-6 pt-2 pb-8">
-      <Header title="Checkout" image={profile} />
+      <Header
+        title="Checkout"
+        image={profile}
+        onProfile={() => navigate("/profile")}
+      />
 
       <AddressCard />
 

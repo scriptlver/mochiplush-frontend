@@ -16,7 +16,7 @@ function CollectionBT21() {
       <Header
         title="Coleção BT21"
         image={profile}
-        onBack={() => navigate("/")}
+        onProfile={() => navigate("/profile")}
       />
 
       <p className="-mt-5 text-center font-lexend text-[14px] text-[#A8A8A8]">

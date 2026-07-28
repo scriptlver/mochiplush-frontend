@@ -13,7 +13,11 @@ function Cart() {
 
   return (
     <div className="min-h-screen bg-[#F8F8F8] px-6 pt-6">
-      <Header title="Carrinho" image={profile} />
+      <Header
+        title="Carrinho"
+        image={profile}
+        onProfile={() => navigate("/profile")}
+      />
 
       <div className="mt-6 flex flex-col gap-3">
         <CartItem

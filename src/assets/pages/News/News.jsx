@@ -15,7 +15,7 @@ function News() {
       <Header
         title="Novidades"
         image={profile}
-        onBack={() => navigate("/")}
+        onProfile={() => navigate("/profile")}
       />
 
       <p className="-mt-5 text-center font-lexend text-[14px] text-[#A8A8A8]">
