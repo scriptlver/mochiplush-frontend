@@ -2,6 +2,8 @@ import ProductHeader from "../../components/ProductHeader/ProductHeader";
 import { useNavigate } from "react-router-dom";
 import tata from "../../img/Home/tata.png";
 
+import Menu from "../../components/Menu/Menu";
+
 function ProductPage() {
   const navigate = useNavigate();
   return (
@@ -145,6 +147,7 @@ function ProductPage() {
           </div>
         </div>
       </div>
+      <Menu />
     </div>
   );
 }

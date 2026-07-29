@@ -7,11 +7,13 @@ import ProductCard from "../../components/ProductCard/ProductCard";
 import { newsProducts } from "../../components/ProductNews/ProductNews";
 import profile from "../../img/Header/sooin-icon.png";
 
+import Menu from "../../components/Menu/Menu";
+
 function News() {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-[#F8F8F8] px-6 pt-2">
+    <div className="min-h-screen bg-[#F8F8F8] px-6 pt-2 pb-22">
       <Header
         title="Novidades"
         image={profile}
@@ -31,6 +33,7 @@ function News() {
           <ProductCard key={product.id} {...product} />
         ))}
       </div>
+      <Menu />
     </div>
   );
 }

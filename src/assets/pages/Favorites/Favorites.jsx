@@ -9,6 +9,7 @@ import {
 } from "../../components/ProductsSection/ProductsSection";
 
 import profile from "../../img/Header/sooin-icon.png";
+import Menu from "../../components/Menu/Menu";
 
 function Favorites() {
   const navigate = useNavigate();
@@ -17,7 +18,7 @@ function Favorites() {
   );
 
   return (
-    <div className="min-h-screen bg-[#F8F8F8] px-6 pt-2">
+    <div className="min-h-screen bg-[#F8F8F8] px-6 pt-2 pb-22">
       <Header
         title="Favoritos"
         image={profile}
@@ -37,6 +38,7 @@ function Favorites() {
           <ProductCard key={product.id} {...product} />
         ))}
       </div>
+      <Menu />
     </div>
   );
 }

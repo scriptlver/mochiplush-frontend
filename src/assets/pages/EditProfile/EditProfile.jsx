@@ -23,7 +23,7 @@ function EditProfile() {
   };
 
   return (
-    <div className="min-h-screen bg-[#F8F8F8]">
+    <div className="min-h-screen bg-[#F8F8F8] px-6 pt-2 pb-10">
       <Header title="Editar perfil" />
 
       <div className="mt-5 flex flex-col items-center">

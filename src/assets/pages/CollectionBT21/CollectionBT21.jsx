@@ -5,6 +5,7 @@ import SearchBar from "../../components/SearchBar/SearchBar";
 import ProductCard from "../../components/ProductCard/ProductCard";
 
 import { bt21Products } from "../../components/ProductsSection/ProductsSection";
+import Menu from "../../components/Menu/Menu";
 
 import profile from "../../img/Header/sooin-icon.png";
 
@@ -12,7 +13,7 @@ function CollectionBT21() {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-[#F8F8F8] px-6 pt-2">
+    <div className="min-h-screen bg-[#F8F8F8] px-6 pt-2 pb-22">
       <Header
         title="Coleção BT21"
         image={profile}
@@ -40,6 +41,7 @@ function CollectionBT21() {
           />
         ))}
       </div>
+      <Menu />
     </div>
   );
 }

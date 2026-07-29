@@ -2,6 +2,8 @@ import { useNavigate } from "react-router-dom";
 import Header from "../../components/Header/Header";
 import profile from "../../img/Header/sooin-icon.png";
 
+import Menu from "../../components/Menu/Menu";
+
 function Profile() {
   const navigate = useNavigate();
 
@@ -47,6 +49,8 @@ function Profile() {
           </button>
         </div>
       </div>
+
+      <Menu />
     </div>
   );
 }

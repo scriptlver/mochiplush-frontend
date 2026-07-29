@@ -7,6 +7,7 @@ import PaymentMethod from "../../components/PaymentMethod/PaymentMethod";
 import SuccessModal from "../../components/Modal/SuccessModal/SuccessModal";
 
 import profile from "../../img/Header/sooin-icon.png";
+import Menu from "../../components/Menu/Menu";
 
 function Checkout() {
   const navigate = useNavigate();
@@ -21,7 +22,7 @@ function Checkout() {
   };
 
   return (
-    <div className="relative min-h-screen bg-[#F8F8F8] px-6 pt-2 pb-8">
+    <div className="relative min-h-screen bg-[#F8F8F8] px-6 pt-2 pb-22">
       <Header
         title="Checkout"
         image={profile}
@@ -62,6 +63,8 @@ function Checkout() {
       </button>
 
       <SuccessModal isOpen={isModalOpen} />
+
+      <Menu />
     </div>
   );
 }

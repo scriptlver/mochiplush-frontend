@@ -9,6 +9,7 @@ import DeleteAccountModal from "../../components/Modal/DeleteAccountModal/Delete
 import SuccessDeleteAccount from "../../components/Modal/SuccessDeleteAccount/SuccessDeleteAccount";
 
 import profile from "../../img/Header/sooin-icon.png";
+import Menu from "../../components/Menu/Menu";
 
 function Settings() {
   const navigate = useNavigate();
@@ -99,6 +100,8 @@ function Settings() {
       />
 
       <SuccessDeleteAccount isOpen={isSuccessDeleteOpen} />
+
+      <Menu />
     </>
   );
 }
