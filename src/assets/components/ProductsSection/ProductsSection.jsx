@@ -122,6 +122,8 @@ export const bt21Products = [
   },
 ];
 
+export const allProducts = [...featuredProducts, ...bt21Products];
+
 function ProductsSection() {
   const navigate = useNavigate();
 
