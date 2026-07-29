@@ -92,10 +92,7 @@ function Register() {
 
             <span className="font-lexend text-[14px] leading-5 text-[#2B2B2B]">
               Eu li e aceito os{" "}
-              <Link
-                to="/terms-of-use"
-                className="font-semibold hover:underline"
-              >
+              <Link to="/terms" className="font-semibold hover:underline">
                 Termos de Uso
               </Link>{" "}
               e a{" "}

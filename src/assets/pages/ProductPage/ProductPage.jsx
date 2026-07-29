@@ -126,7 +126,7 @@ function ProductPage() {
 
             <div className="mt-6 flex justify-between text-[13px]">
               <button
-                onClick={() => navigate("/terms-of-use")}
+                onClick={() => navigate("/terms")}
                 className="
     font-inter
     font-semibold

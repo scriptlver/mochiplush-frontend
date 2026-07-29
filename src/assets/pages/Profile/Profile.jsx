@@ -7,10 +7,7 @@ function Profile() {
 
   return (
     <div className="min-h-screen bg-[#F8F8F8] px-6 pt-6">
-      <Header
-        title="Perfil"
-        onProfile={() => navigate("/profile")}
-      />
+      <Header title="Perfil" onProfile={() => navigate("/profile")} />
 
       <div className="mt-5 flex flex-col items-center">
         <img
@@ -42,7 +39,10 @@ function Profile() {
             Meus pedidos
           </button>
 
-          <button className="h-14 rounded-xl border border-black bg-[#F584BE] font-lexend text-[18px] font-semibold text-white transition hover:bg-[#DD62A1]">
+          <button
+            onClick={() => navigate("/settings")}
+            className="h-14 rounded-xl border border-black bg-[#F584BE] font-lexend text-[18px] font-semibold text-white transition hover:bg-[#DD62A1]"
+          >
             Configurações
           </button>
         </div>

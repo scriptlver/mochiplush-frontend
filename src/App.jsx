@@ -18,7 +18,7 @@ import CheckoutCard from "./assets/pages/CheckoutCard/CheckoutCard";
 import Profile from "./assets/pages/Profile/Profile";
 import EditProfile from "./assets/pages/EditProfile/EditProfile";
 
-
+import Settings from "./assets/pages/Settings/Settings";
 
 function App() {
   return (
@@ -27,7 +27,7 @@ function App() {
         <Route path="/" element={<Welcome />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/terms-of-use" element={<TermsOfUse />} />
+        <Route path="/terms" element={<TermsOfUse />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/home" element={<Home />} />
         <Route path="/favorites" element={<Favorites />} />
@@ -39,6 +39,7 @@ function App() {
         <Route path="/checkout-card" element={<CheckoutCard />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/edit-profile" element={<EditProfile />} />
+        <Route path="/settings" element={<Settings />} />
       </Routes>
     </BrowserRouter>
   );
