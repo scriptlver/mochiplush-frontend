@@ -1,6 +1,6 @@
 import { AlertTriangle } from "lucide-react";
 
-function LogoutModal({ isOpen, onClose, onConfirm }) {
+function DeleteAccountModal({ isOpen, onClose, onConfirm }) {
   if (!isOpen) return null;
 
   return (
@@ -13,8 +13,8 @@ function LogoutModal({ isOpen, onClose, onConfirm }) {
             Atenção
           </p>
 
-          <h3 className="mt-2 text-center font-lexend text-[14px] text-[#757575]">
-            Você deseja sair da sua conta?
+          <h3 className="mt-2 text-center font-lexend text-[13px] text-[#757575]">
+            Esta ação é permanente e apagará todos os dados associados à sua conta. Tem certeza de que deseja continuar?
           </h3>
         </div>
 
@@ -38,4 +38,4 @@ function LogoutModal({ isOpen, onClose, onConfirm }) {
   );
 }
 
-export default LogoutModal;
+export default DeleteAccountModal;

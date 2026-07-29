@@ -1,4 +1,4 @@
-function SuccessLogout({ isOpen }) {
+function SuccessDeleteAccount({ isOpen }) {
   if (!isOpen) return null;
 
   return (
@@ -21,11 +21,11 @@ function SuccessLogout({ isOpen }) {
         </div>
 
         <h3 className="font-lexend text-[16px] font-bold text-black mb-2 leading-tight">
-          Logout realizado com sucesso!
+          Conta excluída com sucesso!
         </h3>
       </div>
     </div>
   );
 }
 
-export default SuccessLogout;
+export default SuccessDeleteAccount;
