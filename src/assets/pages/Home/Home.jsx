@@ -1,17 +1,17 @@
 import { useNavigate } from "react-router-dom";
-
 import HeaderHome from "../../components/HeaderHome/HeaderHome";
-import ProductsSection from "../../components/ProductsSection/ProductsSection";
+import ProductsSection, {
+  allProducts,
+} from "../../components/ProductsSection/ProductsSection";
 import bannerHeader from "../../img/Home/header.png";
-
 import Menu from "../../components/Menu/Menu";
 
 function Home() {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-[#F8F8F8]">
-      <HeaderHome />
+    <>
+      <HeaderHome products={allProducts} />
 
       <div className="relative -mt-12 rounded-t-[32px] bg-[#F8F8F8] px-4 pt-6 pb-22">
         <div className="relative mb-8 overflow-hidden rounded-2xl">
@@ -33,7 +33,7 @@ function Home() {
       </div>
 
       <Menu />
-    </div>
+    </>
   );
 }
 

@@ -25,7 +25,7 @@ function News() {
       </p>
 
       <div className="mt-6">
-        <SearchBar showCart={false} />
+        <SearchBar showCart={false} size="large"/>
       </div>
 
       <div className="mt-6 grid grid-cols-2 gap-x-2 gap-y-4">

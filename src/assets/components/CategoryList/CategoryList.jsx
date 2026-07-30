@@ -7,21 +7,21 @@ function CategoryList() {
   const navigate = useNavigate();
 
   return (
-    <div className="flex justify-between px-2">
-      <div onClick={() => navigate("/news")} className="cursor-pointer">
-        <CategoryButton icon={Flame} title="Novidades" />
-      </div>
+    <div className="flex justify-center gap-6">
+  <div onClick={() => navigate("/news")} className="cursor-pointer">
+    <CategoryButton icon={Flame} title="Novidades" />
+  </div>
 
-      <div onClick={() => navigate("/favorites")} className="cursor-pointer">
-        <CategoryButton icon={Heart} title="Favoritos" />
-      </div>
+  <div onClick={() => navigate("/favorites")} className="cursor-pointer">
+    <CategoryButton icon={Heart} title="Favoritos" />
+  </div>
 
-      <CategoryButton icon={Gift} title="Mais vendidos" />
+  <CategoryButton icon={Gift} title="Mais vendidos" />
 
-      <div onClick={() => navigate("/bt21")} className="cursor-pointer">
-        <CategoryButton icon={Sparkles} title="Coleção BT21" />
-      </div>
-    </div>
+  <div onClick={() => navigate("/bt21")} className="cursor-pointer">
+    <CategoryButton icon={Sparkles} title="Coleção BT21" />
+  </div>
+</div>
   );
 }
 

@@ -1,19 +1,22 @@
 import { Search, ShoppingCart } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import { allProducts } from "../ProductsSection/ProductsSection";
 
-function SearchBar({ showCart = true }) {
+function SearchBar({ showCart = true, products = [], size = "normal" }) {
   const navigate = useNavigate();
   const [search, setSearch] = useState("");
 
-  const results = allProducts.filter((product) =>
+  const results = products.filter((product) =>
     product.name.toLowerCase().includes(search.toLowerCase()),
   );
 
   return (
-    <div className="relative flex mt-6 items-center gap-3">
-      <div className="flex h-12 flex-1 items-center rounded-xl bg-white px-4 shadow-sm">
+    <div className="relative flex mt-6 justify-center items-center gap-3">
+      <div
+        className={`flex w-[290px] items-center rounded-xl bg-white px-4 shadow-sm ${
+          size === "large" ? "h-12 w-[365px]" : "h-12 w-[290px]"
+        }`}
+      >
         <Search size={20} className="mr-2 text-gray-500" />
 
         <input
@@ -48,8 +51,8 @@ function SearchBar({ showCart = true }) {
                 <div
                   key={product.id}
                   onClick={() => {
-                    if (product.id === 14) {
-                      navigate("/product");
+                    if (product.link) {
+                      navigate(product.link);
                     }
                   }}
                   className="flex cursor-pointer items-center gap-3 rounded-xl p-2 hover:bg-gray-100"
