@@ -28,4 +28,4 @@ function AddCreditCard({ isOpen }) {
   );
 }
 
-export default LoginSuccess;
+export default AddCreditCard;

@@ -20,7 +20,11 @@ function CheckoutCard() {
           <form
             onSubmit={(e) => {
               e.preventDefault();
-              navigate("/checkout");
+              navigate("/cart", {
+                state: {
+                  showAddCreditCard: true,
+                },
+              });
             }}
             className="space-y-5"
           >

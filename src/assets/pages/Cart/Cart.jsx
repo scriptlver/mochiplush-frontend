@@ -1,4 +1,6 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
+import AddCreditCard from "../../components/Modal/AddCreditCard/AddCreditCard";
 
 import Header from "../../components/Header/Header";
 import CartItem from "../../components/CartItem/CartItem";
@@ -11,6 +13,19 @@ import imagemLaviJuan from "../../img/Home/lavi&juan.png";
 
 function Cart() {
   const navigate = useNavigate();
+  const location = useLocation();
+  const [showAddCreditCard, setShowAddCreditCard] = useState(false);
+  useEffect(() => {
+    if (location.state?.showAddCreditCard) {
+      setShowAddCreditCard(true);
+
+      setTimeout(() => {
+        setShowAddCreditCard(false);
+      }, 2000);
+
+      navigate(location.pathname, { replace: true });
+    }
+  }, [location, navigate]);
 
   return (
     <>
@@ -72,6 +87,10 @@ function Cart() {
       </div>
 
       <Menu />
+      <AddCreditCard
+        isOpen={showAddCreditCard}
+        onClose={() => setShowAddCreditCard(false)}
+      />
     </>
   );
 }

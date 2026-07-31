@@ -19,6 +19,8 @@ import Profile from "./assets/pages/Profile/Profile";
 import EditProfile from "./assets/pages/EditProfile/EditProfile";
 
 import Settings from "./assets/pages/Settings/Settings";
+import BestSellers from "./assets/pages/BestSellers/BestSellers";
+
 
 function App() {
   return (
@@ -40,6 +42,7 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/edit-profile" element={<EditProfile />} />
         <Route path="/settings" element={<Settings />} />
+        <Route path="/best-sellers" element={<BestSellers />} />
       </Routes>
     </BrowserRouter>
   );
