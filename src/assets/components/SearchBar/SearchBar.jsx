@@ -13,7 +13,7 @@ function SearchBar({ showCart = true, products = [], size = "normal" }) {
   return (
     <div className="relative flex mt-6 justify-center items-center gap-3">
       <div
-        className={`flex w-[290px] items-center rounded-xl bg-white px-4 shadow-sm ${
+        className={`flex w-[310px] items-center rounded-xl bg-white px-4 shadow-sm ${
           size === "large" ? "h-12 w-[365px]" : "h-12 w-[290px]"
         }`}
       >

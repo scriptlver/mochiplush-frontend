@@ -20,7 +20,7 @@ import EditProfile from "./assets/pages/EditProfile/EditProfile";
 
 import Settings from "./assets/pages/Settings/Settings";
 import BestSellers from "./assets/pages/BestSellers/BestSellers";
-
+import MyOrders from "./assets/pages/MyOrders/MyOrders";
 
 function App() {
   return (
@@ -43,6 +43,7 @@ function App() {
         <Route path="/edit-profile" element={<EditProfile />} />
         <Route path="/settings" element={<Settings />} />
         <Route path="/best-sellers" element={<BestSellers />} />
+        <Route path="/my-orders" element={<MyOrders />} />
       </Routes>
     </BrowserRouter>
   );

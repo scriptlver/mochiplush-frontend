@@ -20,7 +20,8 @@ function CheckoutCard() {
           <form
             onSubmit={(e) => {
               e.preventDefault();
-              navigate("/cart", {
+
+              navigate("/checkout", {
                 state: {
                   showAddCreditCard: true,
                 },
@@ -93,13 +94,14 @@ function CheckoutCard() {
 
             <button
               type="submit"
-              className="mt-8 h-14 w-full rounded-xl bg-[#F584BE] border border-black font-lexend text-xl font-semibold text-white transition hover:bg-[#DD62A1]"
+              className="mt-8 h-14 w-full rounded-xl border border-black bg-[#F584BE] font-lexend text-xl font-semibold text-white transition hover:bg-[#DD62A1]"
             >
               Adicionar cartão
             </button>
           </form>
         </div>
       </div>
+
       <Menu />
     </div>
   );

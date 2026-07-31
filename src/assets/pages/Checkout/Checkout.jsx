@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 
 import Header from "../../components/Header/Header";
 import AddressCard from "../../components/AddressCard/AddressCard";
@@ -8,10 +8,30 @@ import SuccessModal from "../../components/Modal/SuccessModal/SuccessModal";
 
 import profile from "../../img/Header/sooin-icon.png";
 import Menu from "../../components/Menu/Menu";
+import AddCreditCard from "../../components/Modal/AddCreditCard/AddCreditCard";
 
 function Checkout() {
   const navigate = useNavigate();
+  const location = useLocation();
+
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [showAddCreditCard, setShowAddCreditCard] = useState(false);
+  useEffect(() => {
+    if (location.state?.showAddCreditCard) {
+      setShowAddCreditCard(true);
+
+      const timer = setTimeout(() => {
+        setShowAddCreditCard(false);
+
+        navigate(location.pathname, {
+          replace: true,
+          state: {},
+        });
+      }, 2000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [location, navigate]);
 
   const handleFinalizeOrder = () => {
     setIsModalOpen(true);
@@ -65,6 +85,10 @@ function Checkout() {
       <SuccessModal isOpen={isModalOpen} />
 
       <Menu />
+      <AddCreditCard
+        isOpen={showAddCreditCard}
+        onClose={() => setShowAddCreditCard(false)}
+      />
     </div>
   );
 }
