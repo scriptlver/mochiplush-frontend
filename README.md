@@ -8,8 +8,6 @@ frontend de uma loja fictícia de pelúcias colecionáveis criada para proporcio
 
 o projeto ainda não possui hospedagem, pois está em desenvolvimento. a versão atual contempla apenas o frontend, enquanto o backend será implementado futuramente.
 
-**🌸 link do site:** *(em breve)*
-
 **🎥 vídeo demonstrativo:** *(adicione quando publicar)*
 
 ---
@@ -180,7 +178,7 @@ npm run dev
 
 ---
 
-# 🎨 design
+# ✨ design
 
 todo o projeto foi planejado previamente no figma, buscando manter fidelidade entre o protótipo e a implementação final.
 
@@ -192,29 +190,6 @@ durante o desenvolvimento foram aplicados princípios de ui/ux como:
 - 📱 responsividade
 - 🎀 feedback visual ao usuário
 - 🛍️ fluxo intuitivo de navegação
-
----
-
-# 🌸 componentização
-
-a aplicação foi estruturada utilizando componentes reutilizáveis, tornando o código mais organizado, escalável e de fácil manutenção.
-
-alguns dos principais componentes são:
-
-- header
-- headerhome
-- menu
-- searchbar
-- categorybutton
-- categorylist
-- productcard
-- productheader
-- productnews
-- productsection
-- cartitem
-- paymentmethod
-- addresscard
-- modal
 
 ---
 

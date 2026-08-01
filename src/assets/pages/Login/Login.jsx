@@ -21,11 +21,11 @@ function Login() {
   return (
     <>
       <div className="min-h-screen bg-[#F584BE]">
-        <div className="flex justify-center pt-10">
+        <div className="flex justify-between pt-2 px-2">
           <img
             src={logo}
             alt="MochiPlush"
-            className="h-32 w-auto object-contain"
+            className="h-28 w-auto object-contain"
           />
         </div>
 
