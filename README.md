@@ -8,7 +8,7 @@ frontend de uma loja fictícia de pelúcias colecionáveis criada para proporcio
 
 o projeto ainda não possui hospedagem, pois está em desenvolvimento. a versão atual contempla apenas o frontend, enquanto o backend será implementado futuramente.
 
-**🎥 vídeo demonstrativo:** *[(confira aqui!)](https://youtu.be/pskhIMdbCp0?si=P6T6HP9BCoFgjvyl)*
+🎥 **demo video:** https://youtu.be/pskhIMdbCp0?si=P6T6HP9BCoFgjvyl
 
 ---
 
@@ -61,11 +61,8 @@ a mochiplush foi inspirada em lojas modernas de produtos colecionáveis, utiliza
 # 🌸 tecnologias utilizadas
 
 - ⚛️ react
-- ⚡ vite
 - 🎨 tailwind css
-- 📝 html
-- 💅 css
-- 🎯 javascript (es6+)
+- 🎯 javascript 
 - 🎨 figma
 
 ---
