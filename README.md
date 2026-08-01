@@ -8,7 +8,7 @@ frontend de uma loja fictícia de pelúcias colecionáveis criada para proporcio
 
 o projeto ainda não possui hospedagem, pois está em desenvolvimento. a versão atual contempla apenas o frontend, enquanto o backend será implementado futuramente.
 
-🎥 **demo video:** https://youtu.be/pskhIMdbCp0?si=P6T6HP9BCoFgjvyl
+🎥 * **vídeo demo:** [assista no youtube](https://youtu.be/pskhIMdbCp0?si=Hi6TKi9A127EVY1F)
 
 ---
 
