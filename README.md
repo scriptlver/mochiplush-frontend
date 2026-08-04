@@ -205,3 +205,4 @@ a interface foi desenvolvida pensando principalmente na experiência mobile, man
 🎨 toda a identidade visual, prototipação e interface foram elaboradas no figma antes da implementação.
 
 ✨ o projeto reúne conceitos de organização de componentes, experiência do usuário e desenvolvimento de interfaces modernas utilizando react e tailwind css.
+
